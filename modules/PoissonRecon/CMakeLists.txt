@@ -75,9 +75,9 @@ target_include_directories(
 target_link_libraries(${PROJECT_NAME} JPEG::JPEG PNG::PNG)
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY FOLDER
-                                             ${CMAKE_PROJECT_NAME}/modules)
+                                             ${PROJECT_NAME}/modules)
 
-install(TARGETS ${PROJECT_NAME} EXPORT ${CMAKE_PROJECT_NAME}Targets
+install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME}Targets
         ARCHIVE DESTINATION lib LIBRARY DESTINATION lib RUNTIME DESTINATION bin)
 
 install(
@@ -139,8 +139,8 @@ install(
   DESTINATION include/Mesh/PoissonRecon)
 
 export(TARGETS ${PROJECT_NAME} APPEND
-       FILE ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}Targets.cmake)
+       FILE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Targets.cmake)
 
-file(APPEND ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}Config.cmake
+file(APPEND ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
      "set(POISSONRECON_LIBRARIES \${POISSONRECON_LIBRARIES} ${PROJECT_NAME})\n"
      "find_dependency(PNG REQUIRED)\n" "find_dependency(JPEG REQUIRED)\n")
