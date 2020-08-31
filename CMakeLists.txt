@@ -34,17 +34,16 @@ if(NOT TARGET uninstall)
                       ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
 endif()
 
-export(TARGETS FILE ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}Targets.cmake)
+export(TARGETS FILE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Targets.cmake)
 
-file(WRITE ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}Config.cmake
+file(WRITE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
      "include(CMakeFindDependencyMacro)\n"
-     "include(\${CMAKE_CURRENT_LIST_DIR}/${CMAKE_PROJECT_NAME}Targets.cmake)\n")
+     "include(\${CMAKE_CURRENT_LIST_DIR}/${PROJECT_NAME}Targets.cmake)\n")
 
 add_subdirectory(modules)
-add_subdirectory(apps)
 
-install(FILES ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}Config.cmake
-        DESTINATION lib/cmake/${CMAKE_PROJECT_NAME})
+install(FILES ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
+        DESTINATION lib/cmake/${PROJECT_NAME})
 
-install(EXPORT ${CMAKE_PROJECT_NAME}Targets
-        DESTINATION lib/cmake/${CMAKE_PROJECT_NAME})
+install(EXPORT ${PROJECT_NAME}Targets
+        DESTINATION lib/cmake/${PROJECT_NAME})
