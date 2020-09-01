@@ -47,6 +47,8 @@ set(PROJECT_INCS
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PPolynomial.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PPolynomial.inl
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PreProcessor.h
+    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PoissonReconVersion.h
+    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PoissonReconVersion.cpp
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/RegularTree.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/RegularTree.inl
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/SparseMatrix.h
