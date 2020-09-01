@@ -108,8 +108,8 @@ install(
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/Geometry.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/Geometry.inl
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/Image.h
-    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/JPEG.h
-    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/JPEG.inl
+    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/JPEGReader.h
+    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/JPEGReader.inl
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/LinearSolvers.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/MarchingCubes.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/MAT.h
