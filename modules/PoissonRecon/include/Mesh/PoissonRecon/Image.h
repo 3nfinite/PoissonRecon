@@ -109,7 +109,7 @@ protected:
 
 
 // [WARNING] Need to include "png.h" before "jpeg.h" so that "setjmp.h" is not already included (?)
-#include "PNG.h"
+#include "PNGReader.h"
 #include "JPEG.h"
 
 struct FileNameParser

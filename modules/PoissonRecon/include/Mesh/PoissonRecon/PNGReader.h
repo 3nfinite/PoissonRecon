@@ -31,5 +31,5 @@ protected:
 	unsigned int _currentRow;
 };
 
-#include "Mesh/PoissonRecon/PNG.inl"
+#include "Mesh/PoissonRecon/PNGReader.inl"
 #endif //PNG_INCLUDED

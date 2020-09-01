@@ -118,8 +118,8 @@ install(
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/Ply.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PlyFile.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PlyFile.inl
-    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PNG.h
-    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PNG.inl
+    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PNGReader.h
+    ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PNGReader.inl
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PointStream.h
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PointStream.inl
     ${PROJECT_SOURCE_DIR}/include/Mesh/PoissonRecon/PointStreamData.h
