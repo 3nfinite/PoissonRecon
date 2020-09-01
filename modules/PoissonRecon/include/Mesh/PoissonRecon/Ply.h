@@ -505,7 +505,7 @@ int PlyWritePolygons( const char* fileName , CoredMeshData< Vertex , Index >* me
 template< class Vertex , typename Index , class Real , int Dim , typename OutputIndex >
 int PlyWritePolygons( const char* fileName , CoredMeshData< Vertex , Index >* mesh , int file_type , const std::vector< std::string > &comments , XForm< Real , Dim+1 > xForm )
 {
-	if( mesh->outOfCorePointCount()+mesh->inCorePoints.size()>(size_t)std::numeric_limits<OutputIndex>::max() )
+	if( mesh->outOfCorePointCount()+mesh->inCorePoints.size()>(size_t)(std::numeric_limits<OutputIndex>::max)() )
 	{
 		if( std::is_same< Index , OutputIndex >::value ) ERROR_OUT( "more vertices than can be represented using " , PLYTraits< Index >::name );
 		WARN( "more vertices than can be represented using " , PLYTraits< OutputIndex >::name , " using " , PLYTraits< Index >::name , " instead" );
