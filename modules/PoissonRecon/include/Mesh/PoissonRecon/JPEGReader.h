@@ -6,9 +6,9 @@
 
 #ifdef _WIN32
 #include <windows.h>
-#include "JPEG/jpeglib.h"
-#include "JPEG/jerror.h"
-#include "JPEG/jmorecfg.h"
+#include "jpeglib.h"
+#include "jerror.h"
+#include "jmorecfg.h"
 #else // !_WIN32
 #include <jpeglib.h>
 #include <jerror.h>
@@ -48,5 +48,5 @@ protected:
 	unsigned int _currentRow;
 };
 
-#include "Mesh/PoissonRecon/JPEG.inl"
+#include "Mesh/PoissonRecon/JPEGReader.inl"
 #endif //JPEG_INCLUDED
