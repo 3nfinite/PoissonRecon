@@ -8,11 +8,11 @@
 #include <windows.h>
 #include "jpeglib.h"
 #include "jerror.h"
-#include "jmorecfg.h"
+//#include "jmorecfg.h"
 #else // !_WIN32
 #include <jpeglib.h>
 #include <jerror.h>
-#include <jmorecfg.h>
+//#include <jmorecfg.h>
 #endif // _WIN32
 
 struct my_error_mgr
